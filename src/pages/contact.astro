@@ -1,0 +1,87 @@
+---
+import { changeLanguage } from "i18next";
+import { Icon } from "astro-icon";
+import Layout from "@layouts/Layout.astro";
+import Container from "@components/container.astro";
+import Sectionhead from "@components/sectionhead.astro";
+import Button from "@components/ui/button.astro";
+import Contactform from "@components/contactform.astro";
+
+changeLanguage("en");
+
+let contacts = [
+    {
+        title: "Alphatech Contacto",
+        email: "jimenezj0r6e@gmail.com",
+        phone: "+52 (971) 1018065",
+    },
+    {
+        title: "Recursos Humanos",
+        email: "",
+        phone: "+52 (971) 1018065",
+    },
+    {
+        title: "Finanzas",
+        email: "finanzas@juchitan.org",
+        phone: "+52 (971) 1018065",
+    },
+    {
+        title: "Departamento de Desarrollo",
+        email: "dev@juchitan.org",
+        phone: "+52 (971) 1018065",
+    },
+];
+---
+
+<Layout title="Contact">
+	<Container>
+		<Sectionhead>
+			<Fragment slot="title">Contactos De Alphatech</Fragment>
+			<Fragment slot="desc">Estamos para servirte</Fragment>
+		</Sectionhead>
+
+		<div class="py-24 sm:py-32">
+			<div class="mx-auto max-w-7xl px-6 lg:px-8">
+				<div class="mx-auto max-w-2xl space-y-16 divide-y divide-gray-100 lg:mx-0 lg:max-w-none">
+					<div class="grid grid-cols-1 gap-x-8 gap-y-10 lg:grid-cols-3">
+						<div>
+							<h2 class="text-3xl font-bold tracking-tight text-gray-900 dark:text-white">Departamentos</h2>
+							<p class="mt-4 leading-7 text-gray-600 dark:text-gray-200">Contacta con Nosotros</p>
+						</div>
+						<div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:col-span-2 lg:gap-8">
+							{
+								contacts.map((item) => (
+									<div class="rounded-2xl bg-gray-50 dark:bg-stone-800 p-10">
+										<h3 class="text-base font-semibold leading-7 text-gray-900 dark:text-white">{item.title}</h3>
+										<dl class="mt-3 space-y-1 text-sm leading-6 text-gray-600 dark:text-white">
+											<div>
+												<dt class="sr-only">Correo</dt>
+												<dd>
+													<a class="font-semibold text-stone-600 dark:text-white" href="mailto:collaborate@example.com">
+														{item.email}
+													</a>
+												</dd>
+											</div>
+											<div class="mt-1">
+												<dt class="sr-only">Numero de telefono</dt>
+												<dd>{item.phone}</dd>
+											</div>
+										</dl>
+									</div>
+								))
+							}
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="module">
+			import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js"
+			Chatbot.init({
+				chatflowid: "fa448f0b-2c6e-4054-aed8-186943d84c2f",
+				apiHost: "http://137.184.227.54:3000",
+			})
+		</script>
+
+      
+</Layout>

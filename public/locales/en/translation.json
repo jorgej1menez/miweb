@@ -1,0 +1,50 @@
+{
+	"hero": {
+		"title": "Bienvenido a Alphatech",
+		"subtitle": "En Alphatech, nos esforzamos por forjar conexiones digitales significativas, desafiando límites y creando soluciones innovadoras para impulsar el éxito de nuestros clientes en el mundo digital.",
+		"globe_title": "Avanza hacia la transicion tecnologica con Alphatech",
+		"main_button_text": "Empieza Ahora",
+		"secondary_button_text": "Version Animada"
+	},
+	"hero_animated": {
+		"secondary_button_text": ""
+	},
+	"header": {
+		"features": "Servicios",
+		"pricing": "Precios",
+		"blog": "Blog",
+		"contact": "Contactos",
+		"primary_button_text": "Empieza",
+		"secondary_button_text": "Iniciar Sesion"
+	},
+	"features": {
+		"learn_more": "Leer Mas",
+		"title": "",
+		"subtitle": "Todo lo que necesitas en un solo lugar.",
+		"description": "En Alphatech, nuestra visión es innovar constantemente, no solo en la creación de soluciones digitales excepcionales, sino también en capacitar a nuestros usuarios. Buscamos inspirar un enfoque autónomo hacia la gestión de páginas web, fomentando la innovación y la adaptabilidad en un mundo digital en constante evolución. ",
+		"astro": "En Alphatech, creamos experiencias visuales impactantes que cautivan a tu audiencia. Nuestro servicio de diseño web combina creatividad y funcionalidad para construir sitios web modernos y atractivos que reflejan la esencia única de tu marca.",
+		"alpine": "Alphatech impulsa tu éxito en línea con estrategias de marketing digital innovadoras. Desde SEO y redes sociales hasta campañas envolventes, elevamos tu visibilidad digital y conectamos tu marca con audiencias relevantes. ",
+		"tailwind": "Ofrecemos soluciones de alojamiento web seguras y confiables, junto con la creación de correos personalizados para potenciar tu presencia en línea. Con nosotros, tu presencia digital está respaldada por la tecnología más avanzada y un servicio excepcional",
+		"localization": "En Alphatech, llevamos la automatización a un nuevo nivel mediante inteligencia artificial. Optimiza tus procesos, potencia la eficiencia y personaliza las interacciones con nuestros sistemas avanzados.",
+		"light_dark_mode": "Optimizamos tu presencia digital para destacarte en los motores de búsqueda, asegurando que tu negocio sea fácilmente encontrado por tu audiencia objetivo. Desde estrategias de palabras clave hasta optimización técnica.",
+		"giscus": "Nuestro servicio de capacitación en manejo de páginas web te proporciona las habilidades y conocimientos necesarios para administrar y actualizar tu sitio de manera eficiente. Desde la introducción a la plataforma hasta técnicas avanzadas.",
+		"decapcms": "Open source content management for your Git workflow",
+		"rss": "RSS feed generato da @astrojs/rss",
+		"articlegenerator": "Use AI to generate your articles posts"
+	},
+	"faq": {
+		"title": "Preguntas Mas Frecuentes"
+	},
+	"newsletter": {
+		"title": "Suscribete a nuestro Blog",
+		"subtitle": "",
+		"input_placeholder": "Ingresa tu correo",
+		"button_text": "Suscribete",
+		"privacy": "Nos preocupamos por la protección de tus datos.",
+		"privacy_link": "Politicas de privacidad."
+	},
+	"blog": {
+		"prev": "Anterior",
+		"next": "Siguente"
+	}
+}

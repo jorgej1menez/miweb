@@ -1,0 +1,79 @@
+---
+import { changeLanguage } from "i18next";
+import Layout from "@layouts/Layout.astro";
+import Container from "@components/container.astro";
+import Sectionhead from "@components/sectionhead.astro";
+import Pricing from "@components/pricing.astro";
+import Logos from "@components/logos.astro";
+import Faq from "@components/faq.astro";
+
+changeLanguage("en");
+
+const pricingData = [
+    {
+        name: "Personal",
+        price: "800",
+        popular: false,
+        features: ["Subdominio", "Hosting", "Pagina Web", "Integracion", "Soporte Tecnico"],
+
+        button: {
+            text: "Empieza Ahora",
+            link: "/",
+        },
+    },
+    {
+        name: "Startup",
+        price: {
+            monthly: "$1000",
+            annual: "$900",
+            discount: "10%",
+            original: "$1500",
+        },
+        popular: true,
+        features: [
+            "Dominios",
+            "Alojamiento",
+            "Correo Personalizado",
+            "Advanced Integrations",
+            "Soporte Tecnico",
+        ],
+        button: {
+            text: "Empieza ahora",
+            link: "/contact",
+        },
+    },
+    {
+        name: "Hosting",
+        price: "Perzonalizado",
+        popular: false,
+        features: ["All Pro Features", "Unlimited Custom domains", "99.99% Uptime SLA", "SAML & SSO Integration", "24/7 Phone Support"],
+        button: {
+            text: "Contactanos",
+            link: "/contact",
+        },
+    },
+];
+---
+
+<Layout title="Pricing">
+	<Container>
+		<Sectionhead>
+			<Fragment slot="title">Precios</Fragment>
+			<Fragment slot="desc">Contactanos para cotizar algun Proyecto</Fragment>
+		</Sectionhead>
+
+		<div class="grid md:grid-cols-3 gap-10 mx-auto max-w-4xl mt-20">
+			{pricingData.map((item) => <Pricing plan={item} />)}
+		</div>
+		<!-- <Logos /> -->
+		<Faq />
+        <script type="module">
+            import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js"
+            Chatbot.init({
+                chatflowid: "fa448f0b-2c6e-4054-aed8-186943d84c2f",
+                apiHost: "http://137.184.227.54:3000",
+            })
+        </script>
+	</Container>
+
+</Layout>
